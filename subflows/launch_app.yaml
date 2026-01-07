@@ -1,0 +1,5 @@
+appId: com.android.contacts
+---
+- launchApp:
+    clearState: true
+- assertVisible: "Create new contact"

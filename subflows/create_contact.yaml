@@ -1,0 +1,17 @@
+appId: com.android.contacts
+---
+- tapOn: "Create new contact"
+- tapOn: "Cancel"
+- tapOn: "First name"
+- inputText: ${FIRST_NAME}
+- tapOn: "Last name"
+- inputText: ${LAST_NAME}
+- tapOn: "Phone"
+- inputText: ${PHONE}
+- tapOn: "Save"
+- assertVisible:
+    id: large_title
+    text: "${FIRST_NAME} ${LAST_NAME}"
+- assertVisible:
+    id: header
+    text: "${FORMATTED_PHONE}"

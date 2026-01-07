@@ -1,0 +1,11 @@
+appId: com.android.contacts
+---
+- runFlow:
+    file: subflows/launch_app.yaml
+- runFlow:
+    file: subflows/create_contact.yaml
+    env:
+        FIRST_NAME: "Maestro"
+        LAST_NAME: "Bot"
+        PHONE: "5551234567"
+        FORMATTED_PHONE: "(555) 123-4567"
